@@ -18,7 +18,7 @@ def updateDotFiles():
 
 
 
-def uploadToGithub(githubusername=None,githubpassword=None):
+def uploadToGithub():
     today = datetime.date.today()
     todayStringFormated = today.strftime("%m/%d/%y")
     os.system("git add .")
