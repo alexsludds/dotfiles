@@ -1,0 +1,6 @@
+alias update="sudo apt update"
+alias upgrade="sudo apt upgrade"
+alias athena="sudo ssh -X asludds@athena.dialup.mit.edu"
+alias yt-dl="youtube-dl --extract-audio --audio-format mp3"
+alias moveToMusic="cd /home/asludds/Dropbox\ \(MIT\)/Music"
+alias mosaicserver="ssh -i /path/to/your/pubkey admin@18.217.134.19"
