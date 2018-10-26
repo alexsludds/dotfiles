@@ -7,6 +7,7 @@ class dotfiles():
         self.list = []
         self.list.append("/home/asludds/.spacemacs")
         self.list.append("/home/asludds/.bash_aliases")
+        self.list.append("/home/asludds/.config")
 
 dotFiles = dotfiles()
 
@@ -14,8 +15,10 @@ dotFiles = dotfiles()
 
 def updateDotFiles():
     for dotfilename in dotFiles.list:
-        shutil.copy(src=str(dotfilename),dst=str("./dotfiles/"))
-
+        try:
+            shutil.copy(src=str(dotfilename),dst=str("./dotfiles/"))
+        except:
+            print("dotfilename " + "was not able to be coppied")
 
 
 def uploadToGithub():
